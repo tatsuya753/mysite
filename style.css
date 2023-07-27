@@ -38,6 +38,13 @@ nav{
   color: #fafafa;
 }
 
+.nav-list a{
+  color: #fafafa;
+}
+
+a{
+  text-decoration: none;
+}
 #mv{
   width: 100%;
   height: 650px;
@@ -56,4 +63,84 @@ nav{
 .mv-text{
   font-size: 20px;
   padding-top: 10px;
+}
+
+#portfolio{
+  background-color: #eceff1;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-container{
+  display: block;
+  width: 920px;
+}
+
+.portfolio-title{
+  font-size: 32px;
+  padding-top: 90px;
+  text-align: center;
+}
+
+.portfolio-title::after{
+  content: "";
+  display: block;
+  margin: 8px auto 0 auto;
+  height: 3px;
+  width: 70px;
+  background-color: #ec715f;
+}
+
+.portfolio-text{
+  font-size: 16px;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.img-group{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px 0 90px 0;
+}
+
+.img-box{
+  height: 250px;
+  width: 300px;
+  background-size: cover;
+  background-position: center;
+  margin: 10px 10px 0 0;
+}
+
+.img-group > div:nth-child(1) {
+  background-image: url(img/sketch.jpg)
+}
+
+.img-group > div:nth-child(2) {
+  background-image: url(img/websuku.png)
+}
+
+.img-group > div:nth-child(3) {
+  background-image: url(img/write.jpg)
+}
+
+.img-group > div:nth-child(4) {
+  background-image: url(img/webcamp.png)
+}
+
+.img-group > div:nth-child(5) {
+  background-image: url(img/talk.jpg)
+}
+
+.img-group > div:nth-child(6) {
+  background-image: url(img/webcamp-mother.png)
+}
+
+.img-group > div:nth-child(-n+3){
+  margin-top: 0px;
+}
+
+.img-group > div:nth-child(3n){
+  margin-right: 0px;
 }
